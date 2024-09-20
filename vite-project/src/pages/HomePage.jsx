@@ -41,10 +41,10 @@ export default function HomePage() {
         <nav className="flex justify-around w-1/4 ml-auto mt-5">
           <Link to="HomePage" className="text-black text-xl no-underline">Home</Link>
           <Link to="/blog" className="text-black text-xl no-underline">Blog</Link>
-          <Link to="/recipes" className="text-black text-xl no-underline">Recipes</Link>
+          <Link to="RecipesPage" className="text-black text-xl no-underline">Recipes</Link>
           <Link to="/about" className="text-black text-xl no-underline">About</Link>
           <Link to="/contact" className="text-black text-xl no-underline">Contact</Link>
-          <Link to="/Register" className="text-black text-xl no-underline"><img src={register} style={{width:"35px"}} alt="" /></Link>
+          <Link to="Register" className="text-black text-xl no-underline"><img src={register} style={{width:"35px"}} alt="" /></Link>
           <Link to="/Login" className="text-black text-xl no-underline"><img src={login}style={{width:"35px"}}  alt="" /></Link>
         </nav>
       </div>
