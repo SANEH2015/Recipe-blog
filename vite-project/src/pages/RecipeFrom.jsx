@@ -1,24 +1,13 @@
 import { useState, useEffect } from "react";
 
 export default function RecipeForm({ onSubmit, recipe }) {
-    const [name, setName] = useState(recipe ? recipe.name : "");
-    const [ingredients, setIngredients] = useState(recipe ? recipe.ingredients : "");
-    const [instructions, setInstructions] = useState(recipe ? recipe.instructions : "");
-
-    useEffect(() => {
-        if (recipe) {
-            setName(recipe.name);
-            setIngredients(recipe.ingredients);
-            setInstructions(recipe.instructions);
-        }
-    }, [recipe]);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const newRecipe = { name, ingredients, instructions };
-        onSubmit(recipe ? recipe.id : null, newRecipe);
-    };
-
+    const [recipes, setRecipes] = useState([]);
+    const [formData, setFormData] = useState({
+      name: '',
+      ingredients: '',
+      instructions: '',
+      image: null
+    });
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Recipe Name" required />
