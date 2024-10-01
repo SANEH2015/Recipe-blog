@@ -48,7 +48,7 @@ export default function Recipes() {
                 </nav>
             </div>
 
-            {/* Centering the form and submitted recipes */}
+           
             <div className="flex flex-col items-center justify-center min-h-screen">
                 <h3 className="text-center text-xl mb-5 font-serif">SUBMIT YOUR RECIPE</h3>
                 <form onSubmit={handleSubmit} className="mb-10 w-1/2">

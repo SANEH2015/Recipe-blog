@@ -18,7 +18,6 @@ export default function Login() {
   
     const handleSubmit = (event) => {
       event.preventDefault();
-      // Perform login logic here
       console.log("Email:", email);
       console.log("Password:", password);
     };

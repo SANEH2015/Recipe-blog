@@ -15,7 +15,6 @@ export default function Register() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Perform registration logic here
         console.log("Email:", email);
         console.log("Password:", password);
         console.log("Confirm Password:", confirmPassword);
@@ -73,7 +72,7 @@ export default function Register() {
                         </form>
                     </div>
                 </div>
-                {/* Additional illustration code remains the same */}
+               
             </div>
             <Footer />
         </div>
